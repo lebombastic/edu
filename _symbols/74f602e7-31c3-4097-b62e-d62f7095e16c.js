@@ -1666,7 +1666,7 @@ function create_fragment(ctx) {
 			t6 = text("👩‍🏫");
 			t7 = space();
 			h20 = element("h2");
-			t8 = text("Ms. Harper");
+			t8 = text("Mr. Abdelfatah Ahmed");
 			t9 = space();
 			p0 = element("p");
 			t10 = text("Expert in English Language");
@@ -1813,7 +1813,7 @@ function create_fragment(ctx) {
 			t7 = claim_space(div8_nodes);
 			h20 = claim_element(div8_nodes, "H2", { class: true });
 			var h20_nodes = children(h20);
-			t8 = claim_text(h20_nodes, "Ms. Harper");
+			t8 = claim_text(h20_nodes, "Mr. Abdelfatah Ahmed");
 			h20_nodes.forEach(detach);
 			t9 = claim_space(div8_nodes);
 			p0 = claim_element(div8_nodes, "P", { class: true });
