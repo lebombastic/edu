@@ -1,0 +1,131 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-du3lun_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+#page {
+  font-family: system-ui, sans-serif;
+  color: var(--color);
+  line-height: 1.6; 
+  font-size: 1rem;
+  background: var(--background);
+}
+
+.section-container {
+  max-width: var(--max-width, 1000px);
+  margin: 0 auto;
+  padding: 3rem var(--padding, 1rem); 
+}
+
+.heading {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.button.inverted {
+    background: transparent; 
+    color: var(--color-accent); 
+    border: 2px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-du3lun_END -->
+      <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');body{margin:0;padding:0;font-family:'Inter', sans-serif;background-color:#ffffff;color:#333333;line-height:1.6}.svelte-1mb9on9.svelte-1mb9on9{margin:0;padding:0;box-sizing:border-box}.header.svelte-1mb9on9.svelte-1mb9on9{background:white;border-bottom:1px solid #e5e7eb;padding:1rem 1.5rem}.header-container.svelte-1mb9on9.svelte-1mb9on9{max-width:80rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between}.logo.svelte-1mb9on9.svelte-1mb9on9{display:flex;align-items:center;gap:0.5rem}.logo-icon.svelte-1mb9on9.svelte-1mb9on9{font-size:1.25rem}.logo-text.svelte-1mb9on9.svelte-1mb9on9{font-size:1.25rem;font-weight:bold;color:#111827}.nav.svelte-1mb9on9.svelte-1mb9on9{display:none;align-items:center;gap:2rem}.nav.svelte-1mb9on9 a.svelte-1mb9on9{color:#374151;text-decoration:none;transition:color 0.2s}.nav.svelte-1mb9on9 a.svelte-1mb9on9:hover{color:#111827}.header-actions.svelte-1mb9on9.svelte-1mb9on9{display:flex;align-items:center;gap:1rem}.icon-button.svelte-1mb9on9.svelte-1mb9on9{padding:0.5rem;background:none;border:none;color:#6b7280;cursor:pointer;transition:color 0.2s}.icon-button.svelte-1mb9on9.svelte-1mb9on9:hover{color:#111827}.avatar.svelte-1mb9on9.svelte-1mb9on9{width:2rem;height:2rem;background:#d1d5db;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#6b7280}@media(min-width: 768px){.nav.svelte-1mb9on9.svelte-1mb9on9{display:flex}}.instructor-profile.svelte-1mb9on9.svelte-1mb9on9{text-align:center;padding:3rem 1.5rem;background:#f9fafb}.instructor-container.svelte-1mb9on9.svelte-1mb9on9{max-width:64rem;margin:0 auto}.instructor-avatar.svelte-1mb9on9.svelte-1mb9on9{width:6rem;height:6rem;background:linear-gradient(135deg, #fce7f3, #fed7aa);border-radius:50%;margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center}.instructor-avatar-inner.svelte-1mb9on9.svelte-1mb9on9{width:5rem;height:5rem;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem}.instructor-name.svelte-1mb9on9.svelte-1mb9on9{font-size:1.5rem;font-weight:bold;color:#111827;margin-bottom:0.5rem}.instructor-title.svelte-1mb9on9.svelte-1mb9on9{color:#6b7280;margin-bottom:0.5rem}.instructor-connect.svelte-1mb9on9.svelte-1mb9on9{color:#9ca3af;font-size:0.875rem;margin-bottom:1.5rem}.social-links.svelte-1mb9on9.svelte-1mb9on9{display:flex;justify-content:center;gap:1.5rem}.social-link.svelte-1mb9on9.svelte-1mb9on9{display:flex;flex-direction:column;align-items:center}.social-button.svelte-1mb9on9.svelte-1mb9on9{padding:0.75rem;background:white;border:none;border-radius:50%;box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);cursor:pointer;transition:box-shadow 0.2s}.social-button.svelte-1mb9on9.svelte-1mb9on9:hover{box-shadow:0 4px 6px rgba(0, 0, 0, 0.1)}.social-label.svelte-1mb9on9.svelte-1mb9on9{color:#9ca3af;font-size:0.75rem;margin-top:0.25rem}.course-intro.svelte-1mb9on9.svelte-1mb9on9{max-width:64rem;margin:0 auto;padding:3rem 1.5rem}.course-intro.svelte-1mb9on9 h2.svelte-1mb9on9{font-size:1.5rem;font-weight:bold;color:#111827;margin-bottom:1.5rem}.course-intro.svelte-1mb9on9 p.svelte-1mb9on9{color:#374151;line-height:1.625;margin-bottom:2rem}.intro-button-container.svelte-1mb9on9.svelte-1mb9on9{text-align:center}.primary-button.svelte-1mb9on9.svelte-1mb9on9{background:#3b82f6;color:white;padding:0.75rem 2rem;border:none;border-radius:0.5rem;font-weight:500;cursor:pointer;transition:background-color 0.2s}.primary-button.svelte-1mb9on9.svelte-1mb9on9:hover{background:#2563eb}.course-details.svelte-1mb9on9.svelte-1mb9on9{max-width:64rem;margin:0 auto;padding:0 1.5rem 3rem}.course-details.svelte-1mb9on9 h2.svelte-1mb9on9{font-size:1.5rem;font-weight:bold;color:#111827;margin-bottom:2rem}.course-section.svelte-1mb9on9.svelte-1mb9on9{border:1px solid #e5e7eb;border-radius:0.5rem;margin-bottom:1rem;background:white}.section-header.svelte-1mb9on9.svelte-1mb9on9{width:100%;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;text-align:left;background:none;border:none;cursor:pointer;transition:background-color 0.2s}.section-header.svelte-1mb9on9.svelte-1mb9on9:hover{background:#f9fafb}.section-title.svelte-1mb9on9.svelte-1mb9on9{font-weight:500;color:#111827}.chevron.svelte-1mb9on9.svelte-1mb9on9{width:1.25rem;height:1.25rem;transition:transform 0.2s}.chevron.expanded.svelte-1mb9on9.svelte-1mb9on9{transform:rotate(180deg)}.section-content.svelte-1mb9on9.svelte-1mb9on9{padding:0 1.5rem 1.5rem}.section-description.svelte-1mb9on9.svelte-1mb9on9{color:#374151;line-height:1.625;margin-bottom:1.5rem}.section-button-container.svelte-1mb9on9.svelte-1mb9on9{text-align:center}.secondary-button.svelte-1mb9on9.svelte-1mb9on9{background:#f3f4f6;color:#374151;padding:0.5rem 1.5rem;border:none;border-radius:0.5rem;font-weight:500;cursor:pointer;transition:background-color 0.2s}.secondary-button.svelte-1mb9on9.svelte-1mb9on9:hover{background:#e5e7eb}.footer.svelte-1mb9on9.svelte-1mb9on9{background:white;border-top:1px solid #e5e7eb;padding:2rem 1.5rem;margin-top:3rem}.footer-container.svelte-1mb9on9.svelte-1mb9on9{max-width:80rem;margin:0 auto}.footer-links.svelte-1mb9on9.svelte-1mb9on9{display:flex;justify-content:center;gap:2rem;margin-bottom:1rem}.footer-links.svelte-1mb9on9 a.svelte-1mb9on9{color:#6b7280;text-decoration:none;font-size:0.875rem;transition:color 0.2s}.footer-links.svelte-1mb9on9 a.svelte-1mb9on9:hover{color:#111827}.footer-copyright.svelte-1mb9on9.svelte-1mb9on9{text-align:center;color:#9ca3af;font-size:0.875rem}.modal-overlay.svelte-1mb9on9.svelte-1mb9on9{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);display:flex;align-items:center;justify-content:center;padding:1rem;z-index:50}.modal.svelte-1mb9on9.svelte-1mb9on9{background:white;border-radius:0.5rem;max-width:42rem;width:100%;max-height:90vh;overflow-y:auto}.modal-header.svelte-1mb9on9.svelte-1mb9on9{padding:1.5rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e7eb}.modal-title.svelte-1mb9on9.svelte-1mb9on9{font-size:1.25rem;font-weight:bold}.close-button.svelte-1mb9on9.svelte-1mb9on9{background:none;border:none;color:#9ca3af;cursor:pointer;padding:0.25rem;transition:color 0.2s}.close-button.svelte-1mb9on9.svelte-1mb9on9:hover{color:#374151}.modal-content.svelte-1mb9on9.svelte-1mb9on9{padding:1.5rem}.progress-container.svelte-1mb9on9.svelte-1mb9on9{margin-bottom:1.5rem}.progress-info.svelte-1mb9on9.svelte-1mb9on9{display:flex;justify-content:space-between;font-size:0.875rem;color:#9ca3af;margin-bottom:0.5rem}.progress-bar.svelte-1mb9on9.svelte-1mb9on9{width:100%;height:0.5rem;background:#e5e7eb;border-radius:9999px;overflow:hidden}.progress-fill.svelte-1mb9on9.svelte-1mb9on9{height:100%;background:#3b82f6;transition:width 0.3s}.question-container.svelte-1mb9on9.svelte-1mb9on9{margin-bottom:2rem}.question-text.svelte-1mb9on9.svelte-1mb9on9{font-size:1.125rem;font-weight:500;margin-bottom:1.5rem}.options-container.svelte-1mb9on9.svelte-1mb9on9{display:flex;flex-direction:column;gap:0.75rem}.option-button.svelte-1mb9on9.svelte-1mb9on9{width:100%;text-align:left;padding:1rem;border:2px solid #e5e7eb;border-radius:0.5rem;background:white;cursor:pointer;transition:all 0.2s}.option-button.svelte-1mb9on9.svelte-1mb9on9:hover{border-color:#d1d5db;background:#f9fafb}.option-button.selected.svelte-1mb9on9.svelte-1mb9on9{border-color:#3b82f6;background:#eff6ff}.option-label.svelte-1mb9on9.svelte-1mb9on9{font-weight:500;margin-right:0.75rem}.modal-footer.svelte-1mb9on9.svelte-1mb9on9{display:flex;justify-content:space-between;padding:1.5rem;border-top:1px solid #e5e7eb}.nav-button.svelte-1mb9on9.svelte-1mb9on9{padding:0.5rem 1.5rem;border:none;background:none;color:#6b7280;cursor:pointer;transition:color 0.2s}.nav-button.svelte-1mb9on9.svelte-1mb9on9:hover:not(:disabled){color:#374151}.nav-button.svelte-1mb9on9.svelte-1mb9on9:disabled{opacity:0.5;cursor:not-allowed}.next-button.svelte-1mb9on9.svelte-1mb9on9{background:#3b82f6;color:white;padding:0.5rem 1.5rem;border:none;border-radius:0.5rem;cursor:pointer;transition:background-color 0.2s}.next-button.svelte-1mb9on9.svelte-1mb9on9:hover:not(:disabled){background:#2563eb}.next-button.svelte-1mb9on9.svelte-1mb9on9:disabled{background:#d1d5db;cursor:not-allowed}.results-container.svelte-1mb9on9.svelte-1mb9on9{text-align:center;padding:1.5rem}.score-display.svelte-1mb9on9.svelte-1mb9on9{font-size:2.25rem;font-weight:bold;color:#3b82f6;margin-bottom:0.5rem}.score-text.svelte-1mb9on9.svelte-1mb9on9{color:#6b7280;margin-bottom:1rem}.score-message.svelte-1mb9on9.svelte-1mb9on9{font-weight:500;margin-bottom:1.5rem}.score-message.excellent.svelte-1mb9on9.svelte-1mb9on9{color:#059669}.score-message.good.svelte-1mb9on9.svelte-1mb9on9{color:#d97706}.score-message.needs-improvement.svelte-1mb9on9.svelte-1mb9on9{color:#dc2626}.results-buttons.svelte-1mb9on9.svelte-1mb9on9{display:flex;flex-direction:column;gap:0.5rem}.retake-button.svelte-1mb9on9.svelte-1mb9on9{width:100%;background:#3b82f6;color:white;padding:0.5rem 1rem;border:none;border-radius:0.5rem;cursor:pointer;transition:background-color 0.2s}.retake-button.svelte-1mb9on9.svelte-1mb9on9:hover{background:#2563eb}.close-results-button.svelte-1mb9on9.svelte-1mb9on9{width:100%;background:#e5e7eb;color:#374151;padding:0.5rem 1rem;border:none;border-radius:0.5rem;cursor:pointer;transition:background-color 0.2s}.close-results-button.svelte-1mb9on9.svelte-1mb9on9:hover{background:#d1d5db}</style>
+    </head>
+    <body id="page">
+       
+<div class="section svelte-1mb9on9" id="section-a1bf0290"><main class="svelte-1mb9on9">
+    <header class="header svelte-1mb9on9"><div class="header-container svelte-1mb9on9"><div class="logo svelte-1mb9on9"><span class="logo-icon svelte-1mb9on9">📚</span>
+                <span class="logo-text svelte-1mb9on9">EduPath</span></div>
+            
+            <nav class="nav svelte-1mb9on9"><a href="/" class="svelte-1mb9on9">Home</a></nav></div></header>
+
+    
+    <section class="instructor-profile svelte-1mb9on9"><div class="instructor-container svelte-1mb9on9"><div class="instructor-avatar svelte-1mb9on9"><div class="instructor-avatar-inner svelte-1mb9on9"><span class="svelte-1mb9on9">👩‍🏫</span></div></div>
+            
+            <h2 class="instructor-name svelte-1mb9on9">Ms. Harper</h2>
+            <p class="instructor-title svelte-1mb9on9">Expert in English Language</p>
+            <p class="instructor-connect svelte-1mb9on9">Connect with me on</p>
+            
+            <div class="social-links svelte-1mb9on9"><div class="social-link svelte-1mb9on9"><button class="social-button svelte-1mb9on9"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" class="svelte-1mb9on9"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" class="svelte-1mb9on9"></path></svg></button>
+                    <span class="social-label svelte-1mb9on9">Twitter</span></div>
+                <div class="social-link svelte-1mb9on9"><button class="social-button svelte-1mb9on9"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2" class="svelte-1mb9on9"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" class="svelte-1mb9on9"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" class="svelte-1mb9on9"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" class="svelte-1mb9on9"></line></svg></button>
+                    <span class="social-label svelte-1mb9on9">Instagram</span></div>
+                <div class="social-link svelte-1mb9on9"><button class="social-button svelte-1mb9on9"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" class="svelte-1mb9on9"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" class="svelte-1mb9on9"></path></svg></button>
+                    <span class="social-label svelte-1mb9on9">Facebook</span></div></div></div></section>
+
+    
+    <section class="course-intro svelte-1mb9on9"><h2 class="svelte-1mb9on9">Course Introduction</h2>
+        <p class="svelte-1mb9on9">Welcome to my English language course! Whether you&#39;re a beginner, intermediate, or advanced learner, I have tailored 
+            programs to suit your needs. Each level is designed to enhance your language skills progressively. Take the placement test to 
+            find your level, or explore the course details below.
+        </p>
+        <div class="intro-button-container svelte-1mb9on9"><button class="primary-button svelte-1mb9on9">Take Placement Test
+            </button></div></section>
+
+    
+    <section class="course-details svelte-1mb9on9"><h2 class="svelte-1mb9on9">Course Details</h2>
+        
+        <div class="course-section svelte-1mb9on9"><button class="section-header svelte-1mb9on9"><span class="section-title svelte-1mb9on9">Beginner Level</span>
+                <svg class="chevron svelte-1mb9on9 expanded" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9" class="svelte-1mb9on9"></polyline></svg></button>
+            <div class="section-content expanded svelte-1mb9on9"><p class="section-description svelte-1mb9on9">This course is designed for individuals with little to no prior knowledge of English. It covers basic grammar, vocabulary, and conversational skills over 8 weeks. Each week focuses on a specific theme, with interactive exercises and quizzes to reinforce learning. Take the weekly test to assess your progress.
+                    </p>
+                    <div class="section-button-container svelte-1mb9on9"><button class="secondary-button svelte-1mb9on9">Take Weekly Test
+                        </button></div></div></div>
+
+        <div class="course-section svelte-1mb9on9"><button class="section-header svelte-1mb9on9"><span class="section-title svelte-1mb9on9">Intermediate Level</span>
+                <svg class="chevron svelte-1mb9on9 expanded" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9" class="svelte-1mb9on9"></polyline></svg></button>
+            <div class="section-content expanded svelte-1mb9on9"><p class="section-description svelte-1mb9on9">This course is for learners who have a basic understanding of English and want to improve their fluency and comprehension. It includes more complex grammar, a wider range of vocabulary, and practice in various communication scenarios over 12 weeks. Take the weekly test to assess your progress.
+                    </p>
+                    <div class="section-button-container svelte-1mb9on9"><button class="secondary-button svelte-1mb9on9">Take Weekly Test
+                        </button></div></div></div>
+
+        <div class="course-section svelte-1mb9on9"><button class="section-header svelte-1mb9on9"><span class="section-title svelte-1mb9on9">Advanced Level</span>
+                <svg class="chevron svelte-1mb9on9 expanded" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9" class="svelte-1mb9on9"></polyline></svg></button>
+            <div class="section-content expanded svelte-1mb9on9"><p class="section-description svelte-1mb9on9">This course is for advanced learners looking to refine their English skills, focusing on nuanced language use, academic writing, and professional communication. It spans 12 weeks, with challenging materials and discussions. Take the weekly test to assess your progress.
+                    </p>
+                    <div class="section-button-container svelte-1mb9on9"><button class="secondary-button svelte-1mb9on9">Take Weekly Test
+                        </button></div></div></div></section>
+
+    
+    <footer class="footer svelte-1mb9on9"><div class="footer-container svelte-1mb9on9"><div class="footer-links svelte-1mb9on9"><a href="/" class="svelte-1mb9on9">Contact Us</a>
+                <a href="/" class="svelte-1mb9on9">Privacy Policy</a>
+                <a href="/" class="svelte-1mb9on9">Terms of Service</a></div>
+            <div class="footer-copyright svelte-1mb9on9">©2024 EduPath. All rights reserved.
+            </div></div></footer>
+
+    
+    
+
+    
+    </main></div> 
+
+      <script type="module">
+      import('/_symbols/74f602e7-31c3-4097-b62e-d62f7095e16c.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-a1bf0290'),
+              hydrate: true,
+              props: {}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
