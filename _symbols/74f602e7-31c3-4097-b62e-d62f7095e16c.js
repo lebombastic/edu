@@ -2520,7 +2520,7 @@ function instance($$self, $$props, $$invalidate) {
 	let selectedAnswers = [];
 	let showModal = false;
 	let showResultsModal = false;
-	let expandedSections = { 0: true, 1: true, 2: true };
+	let expandedSections = { 0: false, 1: false, 2: false };
 
 	// Section toggle functionality
 	function toggleSection(index) {
